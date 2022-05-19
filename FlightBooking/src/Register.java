@@ -74,6 +74,7 @@ public class Register extends javax.swing.JInternalFrame {
         });
 
         username.setBackground(new java.awt.Color(204, 204, 204));
+        username.setActionCommand("<Not Set>");
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
