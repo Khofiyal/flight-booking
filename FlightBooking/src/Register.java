@@ -170,7 +170,7 @@ public class Register extends javax.swing.JInternalFrame {
             Class.forName ("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String url="jdbc:sqlserver://localhost:1433;user=sa;password=123fatah;databaseName=FlightBooking;encrypt=true;trustServerCertificate=true;";
             Connection con = DriverManager.getConnection(url);
-            String query = "insert into UserData(username, password, email, number)values(?,?,?,?)";
+            String query = "insert into UserLogin(username, password, email, number)values(?,?,?,?)";
             PreparedStatement pst = con.prepareStatement(query);
             pst.setString(1, username.getText());
             pst.setString(2, password.getText());
